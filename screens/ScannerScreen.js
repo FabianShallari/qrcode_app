@@ -58,9 +58,7 @@ export default class ScannerScreen extends Component {
 
     if (focused) {
       const { navigation } = this.props;
-
-      console.log("Data: ", event.data)
-
+      
       navigation.navigate(ScreensConfig.Result.path, resolveParamsForQrCode(event.data));
     }
   }
