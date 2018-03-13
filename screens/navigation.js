@@ -6,10 +6,12 @@ import ScreensConfig from "./config.js";
 export default RootStack = StackNavigator(
   {
     Scanner: {
-      screen: ScannerScreen
+      screen: ScannerScreen,
+      path: ScreensConfig.Scanner.path
     },
     Result: {
-      screen: ResultScreen
+      screen: ResultScreen,
+      path: ScreensConfig.Scanner.path
     }
   },
   {
