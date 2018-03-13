@@ -46,6 +46,7 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
 
 4. Install and link node_modules 
    ````
+   cd /my_favorite_path/qrcode_app
    yarn install
    react-native link react-native-camera 
    ````
@@ -78,15 +79,14 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
    
    Try some cats:
 
-   [cat qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
-
+   ![cat qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
 
    Try some dogs:
 
-   [dog qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
+   ![dog qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
 
    Try an invalid QR code:
 
-   [invalid qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/invalid.png)
+   ![invalid qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/invalid.png)
 
    
