@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React, { Component } from 'react';
+import { Text, View, TouchableOpacity, Button } from 'react-native';
+import ScreensConfig from './config.js';
 
 export default class ScannerScreen extends Component {
   render() {
+    const { navigation } = this.props;
+
     return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
+      <TouchableOpacity>
+        <Button
+         title={"Hit me"}
+         onPress={() => navigation.navigate(ScreensConfig.Result.path)}
+         /> 
+      </TouchableOpacity>
     )
   }
 };
