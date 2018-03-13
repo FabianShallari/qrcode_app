@@ -6,6 +6,12 @@ export default RootStack = StackNavigator(
     ...ScreensConfig
   },
   {
-    initialRouteName: ScreensConfig.Scanner.path
+    initialRouteName: ScreensConfig.Scanner.path,
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#0C656F',
+      },
+      headerTintColor: '#fff',
+    },
   }
 );

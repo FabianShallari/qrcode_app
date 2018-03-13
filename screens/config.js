@@ -4,12 +4,13 @@ import ResultScreen from "./ResultScreen.js";
 export default ScreensConfig = {
   Scanner: {
     screen: ScannerScreen,
-    title: "Gimme Qr Code",
+    navigationOptions: {
+      title: "Gimme Qr Code"
+    },
     path: "Scanner"
   },
   Result: {
     screen: ResultScreen,
-    title: "Result Screen",
     path: "Result"
   },
 };
