@@ -17,6 +17,4 @@ const fallbackParams = {
   bottomText: "Can't trick the master trickster!!!"
 }
 
-export default resolveParamsForQrCode = (qrText) => {
-  return Object.keys(recognizedQrCodes).includes(qrText) ? recognizedQrCodes[qrText] : fallbackParams;
-}
+export default resolveParamsForQrCode = qrText => recognizedQrCodes[qrText] || fallbackParams;
