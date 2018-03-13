@@ -36,7 +36,7 @@ export default class ScannerScreen extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1}}>
+      <View style={{ flex: 1 }}>
         <RNCamera
             ref={ref => {
               this.camera = ref;
@@ -58,7 +58,7 @@ export default class ScannerScreen extends Component {
 
     if (focused) {
       const { navigation } = this.props;
-      
+
       navigation.navigate(ScreensConfig.Result.path, resolveParamsForQrCode(event.data));
     }
   }
