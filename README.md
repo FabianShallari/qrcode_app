@@ -79,16 +79,16 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
 
 10. Enjoy
    
-   Try some cats:
+    Try some cats:
 
-   ![cat qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
+    ![cat qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
 
-   Try some dogs:
+    Try some dogs:
 
-   ![dog qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
+    ![dog qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/cats.png)
 
-   Try an invalid QR code:
+    Try an invalid QR code:
 
-   ![invalid qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/invalid.png)
+    ![invalid qr](https://github.com/fabianshallari/qrcode_app/raw/master/assets/qr/invalid.png)
 
    
