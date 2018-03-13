@@ -1,0 +1,3 @@
+rootProject.name = 'qrcode_app'
+
+include ':app'
