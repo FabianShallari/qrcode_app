@@ -4,6 +4,35 @@ import { RNCamera } from 'react-native-camera';
 import ScreensConfig from './config.js';
 
 export default class ScannerScreen extends Component {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      focused: false
+    }
+  }
+
+  componentDidMount = () => {
+
+    const { navigation } = this.props;
+    
+    this.blurListener = navigation.addListener(
+      'willBlur',
+      () => this.setState({focused: false})
+    );
+
+    this.focusListener = navigation.addListener(
+      'didFocus',
+      () => this.setState({focused: true})
+    );
+  }
+
+  componentWillUnmount = () => {
+    this.blurListener.remove();
+    this.focusListener.remove();
+  }
+
   render() {
     return (
       <View style={{ flex: 1}}>
@@ -24,7 +53,10 @@ export default class ScannerScreen extends Component {
 
   handleBarCode = () => {
     const { navigation } = this.props;
+    const { focused } = this.state;
 
-    navigation.navigate(ScreensConfig.Result.path);
+    if (focused) {
+      navigation.navigate(ScreensConfig.Result.path);
+    }
   }
 };
