@@ -29,7 +29,9 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
 
    `/usr/local/bin/adb`
 
-2. To avoid dependencies mismatch make sure you are using node@8.10.0:
+2. Run `adb reverse tcp:8081 tcp:8081`
+
+3. To avoid dependencies mismatch make sure you are using node@8.10.0:
 
    ````
     // using nvm
@@ -38,20 +40,20 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
     nvm use 8.10.0
    ````
 
-3. Clone repository locally:
+4. Clone repository locally:
    
    ````
    git clone https://github.com/fabianshallari/qrcode_app /my_favorite_path/qrcode_app
    ````
 
-4. Install and link node_modules 
+5. Install and link node_modules 
    ````
    cd /my_favorite_path/qrcode_app
    yarn install
    react-native link react-native-camera 
    ````
 
-5. Import the project on _Android Studio_:
+6. Import the project on _Android Studio_:
    ````
    File -> Open -> my_favorite_path -> qrcode_app -> android
    ````
@@ -61,21 +63,21 @@ This is a simple app made in React Native which scans some pre-made QR Codes and
 
    This should have also generated your `local.properties` file with a link to the Android SDK in your system
 
-6. Open your favorite text editor and open the project
+7. Open your favorite text editor and open the project
    ```` 
     // example with VsCode:
     code /my_favorite_path/qrcode_app
    ````
 
-7. Connect your Android device with the computer and Enable Remote USB Debugging
+8. Connect your Android device with the computer and Enable Remote USB Debugging
 
-8. Run the project:
+9. Run the project:
    ````
    npm start
    react-native run-android
    ````
 
-9. Enjoy
+10. Enjoy
    
    Try some cats:
 
